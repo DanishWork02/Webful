@@ -722,6 +722,26 @@ body {
   color: #6b7280;
 }
 
+.alert-conferma {
+  border: 2px solid #0e9f6e;
+  border-radius: 8px;
+  background: #def7ec;
+  padding: 0px 20px;
+  width: fit-content;
+  position: fixed;
+  top:-150px;
+  right: 30px;
+  transition: all 2s ease-in-out;
+}
+.alert-conferma p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #0e9f6e;
+  vertical-align: middle;
+}
+
+
 @media only screen and (max-width: 800px) {
   .navbar .nav-links {
     display: none;
@@ -917,4 +937,13 @@ body {
     align-items: center;
     align-content: center;
   }
+  
+.alert-conferma {
+  width: fit-content;
+  position: fixed;
+  top:-150px;
+  width: 94%;
+  right: 3%;
+  transition: all 2s ease-in-out; 
+}
 }
