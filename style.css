@@ -18,7 +18,6 @@ body {
   height: 100vh;
   font-family: "Inter", sans-serif;
   background: #ffffff;
-  
 }
 
 body {
@@ -744,5 +743,66 @@ body {
     100% {
       opacity: 1;
     }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cover h1 {
+    font-size: 47px;
+    line-height: 58px;
+    margin-top: 30px;
+  }
+
+  .cover p {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0px 0%;
+  }
+  .screen {
+    width: 100%;
+    margin: 50px 0% 0px 0%;
+  }
+  .cover{
+    margin-bottom: 0px;
+  }
+  .chi-siamo{
+    border: 1px red solid;
+  margin: 0px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .chi-siamo .prima-col {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--grey);
+    width: 100%;
+  }
+  .chi-siamo .sec-col {
+    width: 100%;
+  }
+  .servizi {
+    border: 1px red solid;
+    margin: 80px 8% 60px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .servizi .prima-col {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .servizi .sec-col {
+    width: 100%;
+  }
+  .servizi .sec-col .card {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .servizi .sec-col .card:nth-child(3),.servizi .sec-col .card:nth-child(4){
+    margin-top: 0px;
+    margin-top: 30px;
   }
 }
