@@ -211,7 +211,6 @@ body {
 }
 
 .chi-siamo {
-  border: 1px red solid;
   margin: 0px 8% 0px 8%;
   display: flex;
   flex-direction: row;
@@ -259,7 +258,6 @@ body {
 }
 
 .servizi {
-  border: 1px red solid;
   margin: 130px 8% 60px 8%;
   display: flex;
   flex-direction: row;
@@ -330,7 +328,6 @@ body {
 }
 
 .voce-brand {
-  border: 1px red solid;
   margin: 130px 8% 60px 8%;
   display: flex;
   flex-direction: row;
@@ -373,7 +370,6 @@ body {
 }
 
 .come-lavoro {
-  border: 1px red solid;
   margin: 130px 8% 60px 8%;
   display: flex;
   flex-direction: row;
@@ -432,7 +428,6 @@ body {
 }
 
 .testimoni {
-  border: 1px red solid;
   margin: 130px 8% 60px 8%;
 }
 
@@ -515,7 +510,6 @@ body {
 }
 
 .domande {
-  border: 1px red solid;
   margin: 130px 20% 60px 20%;
 }
 
@@ -604,7 +598,6 @@ body {
 
 .mail {
   width: 100%;
-  border: 1px red solid;
   margin: 130px 0px 60px 0px;
   padding: 0px;
   height: 580px;
@@ -702,6 +695,33 @@ body {
   margin-top: 0px;
 }
 
+.bottom-nav {
+  margin: 480px 8% 0px 8%;
+  width: 84%;
+}
+
+.bottom-nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.bottom-nav .container .logo {
+  font-size: 36px;
+  font-weight: 800;
+  padding: 14px 0px;
+}
+.bottom-nav .container .copyright {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: right;
+  text-transform: capitalize;
+  color: #6b7280;
+}
+
 @media only screen and (max-width: 800px) {
   .navbar .nav-links {
     display: none;
@@ -762,16 +782,15 @@ body {
     width: 100%;
     margin: 50px 0% 0px 0%;
   }
-  .cover{
+  .cover {
     margin-bottom: 0px;
   }
-  .chi-siamo{
-    border: 1px red solid;
-  margin: 0px 8%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  .chi-siamo {
+    margin: 100px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   .chi-siamo .prima-col {
     font-size: 18px;
@@ -783,7 +802,6 @@ body {
     width: 100%;
   }
   .servizi {
-    border: 1px red solid;
     margin: 80px 8% 60px 8%;
     display: flex;
     flex-direction: column;
@@ -801,8 +819,102 @@ body {
     width: 100%;
     margin-top: 30px;
   }
-  .servizi .sec-col .card:nth-child(3),.servizi .sec-col .card:nth-child(4){
+  .servizi .sec-col .card:nth-child(3),
+  .servizi .sec-col .card:nth-child(4) {
     margin-top: 0px;
     margin-top: 30px;
+  }
+  .voce-brand {
+    margin: 80px 8% 60px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .voce-brand .prima-col {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--grey);
+    width: 100%;
+  }
+  .voce-brand .prima-col .riga-elenco {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--black);
+  }
+
+  .voce-brand .sec-col {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .dudefoto {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .come-lavoro {
+    margin: 50px 8% 60px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .come-lavoro .prima-col {
+    width: 100%;
+    order: 2;
+    margin-top: 50px;
+  }
+
+  .come-lavoro .sec-col {
+    width: 100%;
+    order: 1;
+  }
+  .testimoni {
+    margin: 80px 8% 60px 8%;
+  }
+  .domande {
+    margin: 50px 8% 60px 8%;
+  }
+  .accordion-link h3 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    margin-right: 20px;
+  }
+
+  .mail {
+    width: 100%;
+    margin: 70px 0% 60px 0%;
+    padding: 0px;
+    height: 580px;
+  }
+  .mail .form {
+    width: 90%;
+    margin: 20px 5%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .mail .form .casella {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .bottom-nav {
+    margin: 730px 3% 0px 3%;
+    width: 94%;
+  }
+  .bottom-nav .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
   }
 }
