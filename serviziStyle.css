@@ -29,17 +29,12 @@ body {
 
 .cover {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(
-    179.17deg,
-    #eef3f9 0.42%,
-    #dfeaff 70.66%,
-    #ffffff 100.22%
-  );
+  height: min-content;
+  background: #ffffff;
   z-index: 1;
   padding-left: 8%;
   padding-right: 8%;
-  margin-bottom: 270px;
+  margin-bottom: 0px;
 }
 
 .navbar {
@@ -115,7 +110,7 @@ body {
   font-size: 62px;
   font-weight: 900;
   line-height: 60px;
-  margin-top: 70px;
+  margin-top: 90px;
   margin-bottom: 20px;
 }
 
@@ -126,77 +121,121 @@ body {
   color: var(--grey);
   font-weight: 400;
   margin: 0px 20%;
+  margin-bottom: 90px;
 }
 
-.cover .bottone-scopri {
-  background: none;
-  border: 1px solid var(--link);
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 10px 14px;
-  margin-top: 20px;
-  line-height: 18px;
-  color: var(--link);
+.nostri-servizi {
+  margin: 0px 8% 60px 8%;
 }
 
-
-/* 
-.pace {
-  pointer-events: none;
-  user-select: none;
-  z-index: 20000000000;
-  position: fixed;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 400px;
-  border: 0px;
-  height: 1px;
-  overflow: hidden;
-  background:#1b1b1b;
+.nostri-servizi .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.pace .pace-progress {
-  box-sizing: border-box;
-  transform: translate3d(0, 0, 0);
-  max-width: 400px;
-  position: fixed;
-  z-index: 200000000;
-  display: block;
+.nostri-servizi .card .testo {
+  width: 43%;
+}
+
+.nostri-servizi .card .testo h3 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 125%;
+  color: var(--black);
+}
+
+.nostri-servizi .card .testo p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--grey);
+}
+.nostri-servizi .riga {
+  margin: 38px 0px;
+}
+
+.carte-servizi {
+  margin: 130px 8% 60px 8%;
+}
+
+.carte-servizi {
+  text-align: center;
+}
+
+.mini-riga {
+  width: 242px;
+  height: 5px;
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  background-color: #e1e1e1;
+  margin-top: 40px;
+}
+
+.carte-servizi .container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.carte-servizi .container .card {
+  text-align: left;
+  position: relative;
+  width: 45%;
+  padding: 20px 20px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.carte-servizi .container .card .numero p {
+  margin: 0px;
+  padding: 0px;
+  color: #eaeaea;
   position: absolute;
-  top: 0;
-  right: 100%;
-  height: 100%;
-  width: 100%;
-  background: grey;
+  top: 0px;
+  right: 0px;
+  height: min-content;
+  width: min-content;
 }
 
-.pace.pace-inactive {
-  display: none;
+.carte-servizi .container .card .numero {
+  color: #eaeaea;
+  font-weight: 900;
+  font-size: 172px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 130px;
+  text-align: end;
+  z-index: -4;
 }
 
-#preloader{
-  z-index: 200000000;
-  width:100%;
-  height:100vh;
-  background:#101010;
-  overflow:hidden;
-  position:fixed;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-} 
-#preloader .p {
-    position: absolute;
-    top: 40%;
-    font-weight: 900;
-    font-size: 69px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-}*/
+.carte-servizi .container .card h3 {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 125%;
+  text-transform: capitalize;
+  color: var(--black);
+  margin-top: 0px;
+}
 
+.carte-servizi .container .card .riga-elenco {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6b7280;
+}
+
+.carte-servizi .container .card:nth-child(3),
+.carte-servizi .container .card:nth-child(4) {
+  margin: 70px 0px;
+}
 
 
 /*Styling Hamburger Icon*/
@@ -373,13 +412,6 @@ body {
   color: var(--grey);
 }
 
-.voce-brand .prima-col .riga-elenco {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--black);
-}
-
 .voce-brand .sec-col {
   width: 46%;
   display: flex;
@@ -402,46 +434,10 @@ body {
   width: 58%;
 }
 
-.come-lavoro .sec-col .riga-elenco {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.come-lavoro .sec-col h3 {
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 125%;
-}
-
-.come-lavoro .sec-col .riga-elenco .testo h4 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 150%;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.come-lavoro .sec-col .riga-elenco .testo p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: var(--grey);
-  margin-top: 0px;
-}
-
 .come-lavoro .sec-col p {
   font-size: 18px;
   line-height: 150%;
   color: var(--grey);
-}
-
-.come-lavoro .sec-col .riga-elenco {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--black);
 }
 
 .testimoni {
@@ -746,7 +742,7 @@ body {
   padding: 0px 20px;
   width: fit-content;
   position: fixed;
-  top:-150px;
+  top: -150px;
   right: 30px;
   transition: all 2s ease-in-out;
 }
@@ -757,6 +753,7 @@ body {
   color: #0e9f6e;
   vertical-align: middle;
 }
+
 
 
 @media only screen and (max-width: 800px) {
@@ -792,6 +789,87 @@ body {
     font-size: 20px;
   }
 
+  .nostri-servizi {
+    padding: 0px;
+  }
+
+  .nostri-servizi .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .nostri-servizi .card .testo {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .nostri-servizi .card .testo h3 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 100%;
+    color: var(--black);
+    margin: 0px;
+  }
+
+  .nostri-servizi .card .testo p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--grey);
+  }
+
+  .seo-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .seo-testo {
+    order: 0;
+  }
+
+  .seo-image-div {
+    order: 1;
+    margin-top: 50px;
+  }
+
+  .nostri-servizi .riga {
+    margin: 50px 0px 30px 0px;
+  }
+
+  .carte-servizi {
+    margin: 80px 8% 60px 8%;
+    padding: 0px;
+  }
+
+  .carte-servizi .container .card {
+    width: 100%;
+  }
+
+  .carte-servizi .container .card:nth-child(1) {
+    margin-bottom: 40px;
+  }
+
+  .carte-servizi .container .card:nth-child(3){
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .carte-servizi .container .card:nth-child(4){
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .carte-servizi .container .card:nth-child(5){
+    margin-top: 40px;
+  }
+  .carte-servizi .container .card:nth-child(6){
+    margin-top: 40px;
+  }
+  
+  .carte-servizi .container .card .riga-elenco {
+    font-size: 14px;
+    line-height: 100%;
+  }
+
   @keyframes example {
     0% {
       opacity: 0;
@@ -808,12 +886,13 @@ body {
     font-size: 47px;
     line-height: 58px;
     margin-top: 30px;
+    width: 100%;
   }
 
   .cover p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
-    margin: 0px 0%;
+    margin: 50px 0% 60px 0%;
   }
   .screen {
     width: 100%;
@@ -822,45 +901,8 @@ body {
   .cover {
     margin-bottom: 0px;
   }
-  .chi-siamo {
-    margin: 100px 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .chi-siamo .prima-col {
-    font-size: 18px;
-    line-height: 150%;
-    color: var(--grey);
-    width: 100%;
-  }
-  .chi-siamo .sec-col {
-    width: 100%;
-  }
-  .servizi {
-    margin: 80px 8% 60px 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .servizi .prima-col {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  .servizi .sec-col {
-    width: 100%;
-  }
-  .servizi .sec-col .card {
-    width: 100%;
-    margin-top: 30px;
-  }
-  .servizi .sec-col .card:nth-child(3),
-  .servizi .sec-col .card:nth-child(4) {
-    margin-top: 0px;
-    margin-top: 30px;
-  }
+
+  
   .voce-brand {
     margin: 80px 8% 60px 8%;
     display: flex;
@@ -954,13 +996,13 @@ body {
     align-items: center;
     align-content: center;
   }
-  
-.alert-conferma {
-  width: fit-content;
-  position: fixed;
-  top:-150px;
-  width: 94%;
-  right: 3%;
-  transition: all 2s ease-in-out; 
-}
+
+  .alert-conferma {
+    width: fit-content;
+    position: fixed;
+    top: -150px;
+    width: 94%;
+    right: 3%;
+    transition: all 2s ease-in-out;
+  }
 }

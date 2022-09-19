@@ -1,0 +1,599 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webful.</title>
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="serviziStyle.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <!--SLICK-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!--EMAIL-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("AUAhB2ctf0z0QNZ57");
+      })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="pace.js"></script>
+  </head>
+  <body>
+    <div class="cover">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            Webful<span style="color: rgba(254, 119, 71, 1)">.</span></a
+          >
+        </div>
+        <div class="nav-links">
+          <div class="link"><a href="chiSiamo.html">Chi Siamo</a></div>
+          <div class="link"><a href="serviziPage.html">Servizi</a></div>
+          <div class="link"><a>Contatti</a></div>
+          <div class="link" style="margin-right: 0px">
+            <button>Get Started</button>
+          </div>
+        </div>
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+      <div class="riga"></div>
+      <h1>
+        Qua puoi vedere alcuni dei<br />nostri numerosi servizi<span
+          style="color: rgba(254, 119, 71, 1)"
+          >.</span
+        >
+      </h1>
+      <p>
+        Ascoltiamo e analizziamo i problemi delle aziende per elaborare una
+        strategia che le porti al raggiungimento degli obbiettivi prefissati
+      </p>
+    </div>
+
+    <div class="nostri-servizi">
+      <div class="card">
+        <div class="testo">
+          <h3>Ottimizzazione Social</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
+            nulla a eros faucibus euismod. Fusce vestibulum urna eu tristique
+            tristique. Aliquam lobortis orci ut risus euismod mollis vitae sit
+            amet libero. Vivamus nec viverra tortor, eu iaculis nibh.
+          </p>
+        </div>
+        <div class="immagine">
+          <img
+            src="assets/serviziAssets/foto1.svg"
+            height="298px"
+            width="auto"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="riga"></div>
+      <div class="card">
+        <div class="immagine seo-image-div">
+          <img
+            src="assets/serviziAssets/foto2.svg"
+            height="298px"
+            width="auto"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="testo seo-testo">
+          <h3>Gestione social</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
+            nulla a eros faucibus euismod. Fusce vestibulum urna eu tristique
+            tristique. Aliquam lobortis orci ut risus euismod mollis vitae sit
+            amet libero. Vivamus nec viverra tortor, eu iaculis nibh.
+          </p>
+        </div>
+      </div>
+      <div class="riga"></div>
+      <div class="card">
+        <div class="testo">
+          <h3>Ads</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
+            nulla a eros faucibus euismod. Fusce vestibulum urna eu tristique
+            tristique. Aliquam lobortis orci ut risus euismod mollis vitae sit
+            amet libero. Vivamus nec viverra tortor, eu iaculis nibh.
+          </p>
+        </div>
+        <div class="immagine">
+          <img
+            src="assets/serviziAssets/foto3.svg"
+            height="298px"
+            width="auto"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="riga"></div>
+      <div class="card">
+        <div class="immagine seo-image-div">
+          <img
+            src="assets/serviziAssets/foto4.svg"
+            height="298px"
+            width="auto"
+            alt=""
+            srcset=""
+            class="seo-image"
+          />
+        </div>
+        <div class="testo seo-testo">
+          <h3>Seo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
+            nulla a eros faucibus euismod. Fusce vestibulum urna eu tristique
+            tristique. Aliquam lobortis orci ut risus euismod mollis vitae sit
+            amet libero. Vivamus nec viverra tortor, eu iaculis nibh.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carte-servizi">
+      <h1>I servizi della nostra Social Media Agency</h1>
+      <center><div class="mini-riga"></div></center>
+      <div class="container">
+        <div class="card">
+          <div class="numero">1</div>
+          <h3>Social Media Strategy</h3>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          
+        </div>
+        <div class="card">
+          <div class="numero">2</div>
+          <h3>Social Media Strategy</h3>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          
+        </div>
+        <div class="card">
+          <div class="numero">3</div>
+          <h3>Social Media Strategy</h3>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          
+        </div>
+        <div class="card">
+          <div class="numero">4</div>
+          <h3>Social Media Strategy</h3>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          
+        </div>
+        <div class="card">
+          <div class="numero">5</div>
+          <h3>Social Media Strategy</h3>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          
+        </div>
+        <div class="card">
+          <div class="numero">6</div>
+          <h3>Social Media Strategy</h3>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          <p class="riga-elenco">
+            <img
+              src="assets/thick.svg"
+              style="vertical-align: middle; margin-right: 15px"
+              alt=""
+              srcset=""
+            />Design your Facebook Page identity from scratch
+          </p>
+          
+        </div>
+        
+      </div>
+    </div>
+
+    <div
+      class="mail"
+      class="parallax-window"
+      data-parallax="scroll"
+      data-image-src="assets/contact.png"
+    >
+      <h3>Contattaci</h3>
+      <p class="sottotitolo">
+        Compila il form e inviaci una richiesta di contatto per organizzare la
+        prima call conoscitiva!
+      </p>
+      <div class="form">
+        <div class="casella">
+          <p>Nome *</p>
+          <input type="text" id="nome" placeholder="Nome" required />
+        </div>
+        <div class="casella">
+          <p>Cognome *</p>
+          <input type="text" id="cognome" placeholder="Cognome" required />
+        </div>
+        <div class="casella">
+          <p>Email *</p>
+          <input
+            type="text"
+            id="email_id"
+            placeholder="esempio@email.com"
+            required
+          />
+        </div>
+        <div class="casella">
+          <p>Telefono</p>
+          <input type="text" id="phone" placeholder="(+39) 345 678 9012" />
+        </div>
+        <div class="casella" style="width: 100%">
+          <p>Breve descrizione *</p>
+          <textarea
+            name=""
+            id="messaggio"
+            placeholder="Breve descrizione..."
+            cols="30"
+          ></textarea>
+        </div>
+        <p
+          style="
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 125%;
+            color: #111928;
+            margin-bottom: 0px;
+          "
+        >
+          I campi contrassegnati con il * sono obbligatori da compilare
+        </p>
+        <p
+          style="
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 125%;
+            color: #6b7280;
+            margin-bottom: 0px;
+          "
+        >
+          Inviando questo modulo si accettano i nostri termini e condizioni e la
+          nostra Informativa sulla privacy che spiega come possiamo raccogliere,
+          utilizzare e divulgare i vostri dati personali, anche a terzi.
+        </p>
+        <button onclick="sendMail()">Invia</button>
+      </div>
+    </div>
+
+    
+
+    <div class="bottom-nav">
+      <div class="riga" style="width: 100%"></div>
+      <div class="container">
+        <div class="logo">
+          Webful<span style="color: rgba(254, 119, 71, 1)">.</span>
+        </div>
+        <div class="copyright">
+          <p>© 2022 Webful, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert-conferma" id="alert-conferma">
+      <p>
+        <img
+          src="assets/circle-thick.svg"
+          alt=""
+          srcset=""
+          style="margin-right: 15px; vertical-align: middle"
+        />La tua mail è stata inviata con successo
+      </p>
+    </div>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
+
+      hamburger.addEventListener("click", () => {
+        //Animate Links
+        navLinks.classList.toggle("open");
+        links.forEach((link) => {
+          link.classList.toggle("fade");
+        });
+
+        //Hamburger Animation
+        hamburger.classList.toggle("toggle");
+      });
+    </script>
+    <script>
+      function sendMail() {
+        var params = {
+          nome: document.getElementById("nome").value,
+          cognome: document.getElementById("cognome").value,
+          //from_cognome: document.getElementById('cognome').value,
+          email_id: document.getElementById("email_id").value,
+          messaggio: document.getElementById("messaggio").value,
+          telefono: document.getElementById("phone").value,
+        };
+        emailjs
+          .send("service_tm7p3t9", "template_41cfznm", params)
+          .then(function (res) {
+            document.getElementById("alert-conferma").style.top = "20px";
+            setTimeout(function () {
+              document.getElementById("alert-conferma").style.top = "-130px";
+            }, 4000);
+          });
+      }
+    </script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".center-car").slick({
+          centerMode: true,
+          centerPadding: "40px",
+          arrows: true,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 880,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "0px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script src="parallax.js"></script>
+  </body>
+</html>
