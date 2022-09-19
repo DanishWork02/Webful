@@ -35,14 +35,15 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
-    <script src="pace.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
   </head>
   <body>
     <div class="cover">
       <div class="navbar">
         <div class="logo">
           <a href="index.html">
-          Webful<span style="color: rgba(254, 119, 71, 1)">.</span></a>
+            Webful<span style="color: rgba(254, 119, 71, 1)">.</span></a
+          >
         </div>
         <div class="nav-links">
           <div class="link"><a href="chiSiamo.html">Chi Siamo</a></div>
@@ -357,6 +358,7 @@
     <div class="domande">
       <h3>Domande Frequenti</h3>
       <div class="container">
+        
         <div class="accordion">
           <div class="accordion-item" id="question1">
             <a class="accordion-link" href="#question1">
@@ -463,14 +465,14 @@
             <hr />
           </div>
         </div>
+
+         
       </div>
-    </div>
+    </div> 
 
     <div
       class="mail"
-      class="parallax-window"
-      data-parallax="scroll"
-      data-image-src="assets/contact.png"
+      
     >
       <h3>Contattaci</h3>
       <p class="sottotitolo">
@@ -657,4 +659,11 @@
     </script>
     <script src="parallax.js"></script>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+  <script>
+    new kursor({
+      type: 1,
+      removeDefaultCursor: true,
+    });
+  </script>
 </html>

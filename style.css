@@ -618,6 +618,7 @@ body {
   margin: 130px 0px 60px 0px;
   padding: 0px;
   height: 580px;
+  background:url(assets/contact.png);
 }
 
 .mail h3 {
