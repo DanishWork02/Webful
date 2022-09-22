@@ -264,12 +264,12 @@ body {
 
 .chi-siamo .sec-col {
   width: 46%;
+  display: flex;
+  justify-content: end;
 }
 
-.chi-siamo .sec-col p {
-  font-size: 18px;
-  line-height: 150%;
-  color: var(--grey);
+.chi-siamo .sec-col img{
+  width: 100%;
 }
 
 .servizi {
@@ -382,6 +382,10 @@ body {
   width: 46%;
   display: flex;
   justify-content: end;
+}
+
+.voce-brand .sec-col img{
+  height: min-content;
 }
 
 .come-lavoro {
